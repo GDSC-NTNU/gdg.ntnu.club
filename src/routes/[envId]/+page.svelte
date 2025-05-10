@@ -160,7 +160,7 @@
 			autocomplete="off"
 			class="input input-bordered flex-1"
 		/>
-		<button onclick={sendMessage} class="btn btn-primary" disabled={sending}>
+		<button onclick={sendMessage} class="btn btn-primary" disabled={sending || input.length === 0}>
 			{#if sending}
 				<span class="loading loading-spinner loading-xs"></span>
 			{/if}
